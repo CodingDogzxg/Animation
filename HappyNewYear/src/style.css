@@ -1,0 +1,52 @@
+html, body {
+     height: 100%;
+
+}
+ body{
+     margin: 10px;
+     font-size: 2vw;
+     margin: 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+} 
+canvas {    
+     background-color: #000000;
+     max-width: 100%;
+     max-height: 100%;
+     width: auto;
+     height: auto;
+  resize: both;
+}
+center{
+     z-index: 100;
+     max-width: 100%;
+     max-height: 100%;
+     width: auto;
+     height: auto;
+}
+
+.noAni{
+     width:128px; 
+     height:128px;
+     position: absolute; 
+     bottom:50px; 
+     right:50px; 
+}
+.doAni{
+     width:128px; 
+     height:128px;
+     position: absolute; 
+     bottom:50px; 
+     right:50px; 
+     animation: rotate 6s linear infinite;
+}
+
+@keyframes rotate{
+	0%{
+		transform: rotateZ(0deg);/*从0度开始*/
+	}
+	100%{
+		transform: rotateZ(360deg);/*360度结束*/
+     }
+}

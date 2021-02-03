@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body style="background-color: black;">
+    <link rel="stylesheet" href="src/style.css">
+    <canvas id="myCanvas" width=1000 height=2000></canvas>
+    <script src="src/script.js"></script>
+
+    
+    <a onclick="music()">
+      <audio src="src/firework.mp3" autoplay preload loop="loop"></audio>
+      <audio id="bgMusic" src="src/newyear.mp3" autoplay preload loop="loop"></audio>
+      <img src="src/music.png" class="doAni" id="img">
+    </a>
+  </body>
+  <script>
+      function music(){
+          var mucObj = document.getElementById("bgMusic");
+          var imgObj = document.getElementById("img");
+          if(mucObj.paused){
+            mucObj.play();
+            imgObj.setAttribute('class', 'doAni');
+          }
+          else{
+            mucObj.pause();
+            imgObj.setAttribute('class', 'noAni');
+          }
+      }
+  </script>
+</html>

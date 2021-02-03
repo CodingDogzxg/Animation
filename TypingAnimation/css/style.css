@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+}
+
+#code{
+    font-family:"sans-serif";
+    color:white;
+    font-size:80px;
+    text-align:left;
+    position: absolute;
+    top: 150px;
+}
